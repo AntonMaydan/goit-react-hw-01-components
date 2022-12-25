@@ -3,9 +3,9 @@ import user from "AppData/user.json";
 import { Statistics } from "./Statistics/Statistics";
 import data from "AppData/data.json";
 import { FriendList } from "./FriendList/FriendList";
-import friends from "AppData/friends.json"
-
-
+import friends from "AppData/friends.json";
+import { TransactionHistory} from './TransactionHistory/TransactionHistory';
+import transactions from "AppData/transactions.json";
 export const App = () => {
   return (
     <div>
@@ -23,6 +23,9 @@ export const App = () => {
         statData={data} />
       <FriendList
         friends={friends} />
+      
+      <TransactionHistory
+        transactions={transactions} />
 
     </div>
   );
